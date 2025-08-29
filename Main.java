@@ -95,7 +95,7 @@ public class Main {
 
 
         //mapa de estados
-        String[] estados = new String[3];
+        String[] estados = new String[7];
         estados[0] = "q0";
         estados[1] = "q1";
         estados[2] = "q2";
@@ -111,8 +111,8 @@ public class Main {
         estados_finais[0] = "q6";
 
         //tabela de transição de AFD para reconhecimento números de dois dígitos
-        int[][] matriz = new int[3][10];
-        
+        int[][] matriz = new int[7][26];
+
         //transições de q0
         matriz[get_string_ref(estados, "q0")][get_char_ref(alfabeto, '0')] = get_string_ref(estados, "q1");
         matriz[get_string_ref(estados, "q0")][get_char_ref(alfabeto, '1')] = get_string_ref(estados, "q1");
